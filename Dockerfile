@@ -7,6 +7,7 @@ RUN apt-get update
 RUN apt-get install -y nginx
 COPY nexus /usr/local/nginx/html
 ENTRYPOINT service nginx start && bash
+EXPOSE 80
 
 FROM jenkins
 USER root
