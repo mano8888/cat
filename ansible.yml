@@ -1,7 +1,7 @@
 Resource_type:
  - name: pull-request
    type: docker-image
-   source:
+   source:edit
    repository: mano8888/mydoc
    
  - name: docker-build
