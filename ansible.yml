@@ -1,9 +1,8 @@
 Resource_type:
  - name: pull-request
    type: docker-image
-   source:go and check
+   source:
    repository: mano8888/mydoc
-   
  - name: docker-build
    type: docker-mage
    source:
