@@ -1,0 +1,24 @@
+Resource_type:
+ - name: pull-request
+   type: docker-image
+   source:
+   repository: mano8888/mydoc
+   
+ - name: docker-build
+   type: docker-mage
+   source:
+   repository: https://docker_hub/mano8888/mydoc
+   details:
+     - name: mano8888
+       passwd:manu@1406
+       checkout: every 1min
+       resource_type:
+       - name: github
+         type: pull-request
+         source:
+       repository: https://github.com/mano8888/dog.git
+       details:
+       - name: mano8888
+         passwd: manu@1406
+         webhook-token: abcd-efgh-ijkl-mnop
+         
