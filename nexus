@@ -1,0 +1,9 @@
+deploy:deploy-file
+-DgroupId=com.dog
+-DartifactId=dog
+-Dversion=1.0-SNAPSHOT
+-Dpackaging=war
+-DgeneratePom=false
+-Drepository=nexus
+-Durl=https://nexus-tb-dog.com/repository/dog-pro
+-Dfile=1.0-SNAPSHOT.war
