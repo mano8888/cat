@@ -7,7 +7,7 @@ do
 echo "==================="
 echo "just now creating www.dog$i containers"
 sleep 1
-sudo docker run -it --name www.dog$i -d mano8888/mydoc /bin/bash
+sudo docker run -it --name www.dog$i -d mano8888/myapp /bin/bash
 echo "==============="
 echo "www.dog$i containers are created"
 done
